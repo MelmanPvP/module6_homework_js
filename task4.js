@@ -22,8 +22,8 @@
 // // (b-a+1)*1000)
 function printNumbersInRange(first,second)
 {
-    first = prompt('Введите 1ое число:');
-    second= prompt('Введите 2ое число:');
+    // first = prompt('Введите 1ое число:');
+    // second= prompt('Введите 2ое число:');
   let current = first;
     interval = setInterval(function ()
     {
@@ -37,4 +37,4 @@ function printNumbersInRange(first,second)
 
 
 }
-printNumbersInRange()
+printNumbersInRange(7,11)

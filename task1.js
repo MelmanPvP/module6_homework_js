@@ -1,14 +1,18 @@
+let  massive=[1, 8, 'привет', 9 , 10, 112 , 87, 13, 0]
+let odd = 0;
+let even = 0;
+let zero = 0;
+let nullcount = 0;
 function number_types()
 {
-    massive=[1, 8, 11, 9 , 10, 112 , 87, 13, 0]
-    let odd = 0;
-    let even = 0;
-    let zero = 0;
-    let nullcount = 0;
+
 
     for (i = 0; i< massive.length; i++)
     {
-
+        if (typeof (massive[i])!== 'number')
+        {
+            continue;
+        }
         if (massive[i] === 0)
         {
             zero++
@@ -22,7 +26,7 @@ function number_types()
         {
             even++
         }
-        if ( number_type === 1 )
+        else
         {
             odd++
         }
