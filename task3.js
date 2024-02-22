@@ -1,16 +1,16 @@
 function first_number(a)
 {
    // a(1)
-   function second_number(b)
+   return function second_number(b)
   {
       // b(3)
       // first_number(1)
-      let sum = a + b;
-      return sum;
+
+      return a + b;
 
   }
-  return second_number(4)
+  // return second_number(4)
 }
 
-console.log(first_number(7))
+console.log(first_number(7)(4))
 // first_number(1)
